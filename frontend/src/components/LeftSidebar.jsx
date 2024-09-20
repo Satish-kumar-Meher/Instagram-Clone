@@ -25,7 +25,7 @@ const LeftSidebar = () => {
 
     const logoutHandler = async () => {
         try {
-            const res = await axios.get('http://localhost:3000/api/v1/user/logout', { withCredentials: true });
+            const res = await axios.get('https://instagram-clone-a4wz.onrender.com/api/v1/user/logout', { withCredentials: true });
             if (res.data.success) {
                 dispatch(setAuthUser(null));
                 dispatch(setSelectedPost(null));

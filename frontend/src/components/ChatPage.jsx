@@ -127,7 +127,7 @@ const ChatPage = () => {
     // Function to handle chat deletion
     const deleteChatHandler = async (receiverId) => {
         try {
-            const res = await axios.delete(`http://localhost:3000/api/v1/message/deleteAll/${receiverId}`, {
+            const res = await axios.delete(`https://instagram-clone-a4wz.onrender.com/api/v1/message/deleteAll/${receiverId}`, {
                 withCredentials: true
             });
             if (res.data.success) {
@@ -142,7 +142,7 @@ const ChatPage = () => {
 
     const sendMessageHandler = async (receiverId) => {
         try {
-            const res = await axios.post(`http://localhost:3000/api/v1/message/send/${receiverId}`, { textMessage }, {
+            const res = await axios.post(`https://instagram-clone-a4wz.onrender.com/api/v1/message/send/${receiverId}`, { textMessage }, {
                 headers: {
                     'Content-Type': 'application/json'
                 },

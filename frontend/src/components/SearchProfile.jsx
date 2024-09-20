@@ -234,7 +234,7 @@ function SearchProfile({ open, setOpen }) {
 
     setLoading(true);
     try {
-      const res = await axios.get("http://localhost:3000/api/v1/user/suggested", { withCredentials: true });
+      const res = await axios.get("https://instagram-clone-a4wz.onrender.com/api/v1/user/suggested", { withCredentials: true });
       if (res.data.success) {
         setSearchedProfiles(res.data.users); // Assuming the response contains the list of users
       } else {

@@ -179,7 +179,7 @@ const Profile = () => {
 
   const handleFollowUnfollow = async () => {
     try {
-      const response = await axios.post(`http://localhost:3000/api/v1/user/followorunfollow/${userId}`, {}, {
+      const response = await axios.post(`https://instagram-clone-a4wz.onrender.com/api/v1/user/followorunfollow/${userId}`, {}, {
         headers: {
           'Content-Type': 'application/json',
         },
