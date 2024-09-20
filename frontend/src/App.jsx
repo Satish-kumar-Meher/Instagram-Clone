@@ -55,7 +55,7 @@ function App() {
 
   useEffect(() => {
     if (user) {
-      const socketio = io('http://localhost:3000', {
+      const socketio = io('https://instagram-clone-a4wz.onrender.com', {
         query: {
           userId: user?._id
         },
